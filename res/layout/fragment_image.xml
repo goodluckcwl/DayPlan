@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cn.edu.zju.isee.www.dayplan.ZoomImageView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/image"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="@android:color/background_light">
+    
+</cn.edu.zju.isee.www.dayplan.ZoomImageView>

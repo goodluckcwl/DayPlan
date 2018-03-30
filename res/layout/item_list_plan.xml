@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    >
+    <ImageView 
+        android:id="@+id/plan_list_typeImageView"
+        android:layout_width="12dp"
+        android:layout_height="match_parent"
+        android:background="@android:color/darker_gray"
+        android:layout_alignParentLeft="true"
+        />
+	    
+	<RelativeLayout 
+	    android:layout_width="0dp"
+	    android:layout_weight="1"
+	    android:layout_height="wrap_content"
+	    android:background="@drawable/background_activated" >
+	    
+	    <CheckBox 
+	        android:id="@+id/plan_list_isSolved"
+	        android:layout_alignParentLeft="true"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        
+	        android:gravity="center"
+	        android:enabled="true"
+	        android:focusable="false"
+	       	android:layout_marginLeft="10dp"	    
+			android:layout_marginRight="0dp" 
+	        android:padding="4dp" />
+				      
+	    <ImageView 
+	        android:id="@+id/plan_list_image"
+	        android:layout_width="50dp"
+	        android:layout_height="50dp"
+	        android:gravity="center"
+	        android:layout_alignParentRight="true"
+	        />
+	    
+	    <TextView
+	        android:id="@+id/plan_list_item_titleTextView"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_toLeftOf="@id/plan_list_image"
+	        android:layout_toRightOf="@id/plan_list_isSolved"
+	        android:textStyle="bold"
+	        android:paddingLeft="4dp"
+	        android:paddingRight="4dp"
+	        android:text="Plan title"
+	        />
+	    
+	    <TextView
+	        android:id="@+id/plan_list_item_detailTextView"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_toLeftOf="@id/plan_list_image"
+	        android:layout_toRightOf="@id/plan_list_isSolved"
+	        android:layout_below="@id/plan_list_item_titleTextView"
+	        android:paddingLeft="4dp"
+	        android:paddingRight="4dp"   		
+	        android:paddingTop="4dp"
+	        android:text="Crime date"        
+	        />
+	    
+	
+	</RelativeLayout>
+
+</LinearLayout>

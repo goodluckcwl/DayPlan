@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">DayPlan</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+	<string name="plan_title_label">任务</string>
+	<string name="plan_title_hint">请输入任务标题</string>
+	<string name="plan_time_label">截止时间</string>
+	<string name="plan_solved_label">已完成</string>
+	<string name="date_picker_title">任务时间</string>
+	<string name="new_plan">新建任务</string>
+	<string name="show_subtitle">显示子标题</string>
+	<string name="hide_subtitle">隐藏子标题</string>
+	<string name="delete_plan">删除</string>
+	<string name="take">OK</string>
+	<string name="share">分享</string>
+	<string name="analyse">统计</string>
+	<string name="ok">确认</string>
+	<string name="type_select_title">任务类型</string>
+	<string name="type_important_urgent">重要且紧迫</string>
+	<string name="type_important_easy">重要不紧迫</string>
+	<string name="type_unimportant_urgent">紧迫不重要</string>
+	<string name="type_unimportant_easy">不重要不紧迫</string>
+	<string name="type_dialog_title">任务类型</string>
+</resources>

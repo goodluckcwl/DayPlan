@@ -1,0 +1,151 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp">
+        
+        <LinearLayout 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginRight="4dp">
+            
+            <ImageView 
+                android:id="@+id/plan_imageView"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:scaleType="centerInside"
+                android:background="@android:color/darker_gray"
+                android:cropToPadding="true"
+                />"
+            <ImageButton 
+                android:id="@+id/plan_imageButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@android:drawable/ic_menu_camera"/>
+        </LinearLayout>
+        
+        <LinearLayout 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+			android:orientation="vertical"
+            android:layout_weight="1"
+            >
+           	<TextView 
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:text="@string/plan_title_label" 
+		        style="?android:listSeparatorTextViewStyle"/>
+		    <EditText 
+       			android:id="@+id/plan_title"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_marginLeft="16dp"
+		        android:layout_marginRight="16dp"
+		        android:hint="@string/plan_title_hint" 
+		        />
+       </LinearLayout>
+        
+    </LinearLayout>
+
+    <TextView 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/plan_time_label"
+        style="?android:listSeparatorTextViewStyle"/>
+	<Button
+	    android:id="@+id/plan_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+		android:layout_marginLeft="16dp"	    
+		android:layout_marginRight="16dp" />
+	<LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal"
+		android:layout_marginLeft="16dp"
+		android:layout_marginRight="16dp"
+	    >
+	    
+		<ImageView 
+		    android:layout_width="0dp"
+		    android:layout_height="40dp"
+		    android:src="@drawable/reminder"
+		    android:layout_weight="0.2"
+		/>
+	    <Button 
+	        android:id="@+id/plan_alarmButton"
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="0.8"
+	        android:layout_gravity="center"
+	        android:text="提醒我"/>
+	    
+	</LinearLayout>
+	<CheckBox 
+	    android:id="@+id/plan_solved"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+		android:layout_marginLeft="16dp"	    
+		android:layout_marginRight="16dp" 
+		android:text="@string/plan_solved_label"/>
+	    
+	<Button 
+	    android:id="@+id/plan_shareButton"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_marginLeft="16dp"
+	    android:layout_marginRight="16dp"
+	    android:text="@string/share"
+	    />
+	<Button
+	    android:id="@+id/plan_staticButton"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_marginLeft="16dp"
+	    android:layout_marginRight="16dp"
+		android:text="@string/analyse"	
+		/> 
+		
+	<LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="50dp"
+	    android:orientation="horizontal"
+	    
+	    >
+        <TextView 
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent" 
+	        style="?android:listSeparatorTextViewStyle"/>
+
+	</LinearLayout>
+	   
+	<LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="40dp"
+	    android:orientation="horizontal"
+	    
+	    >
+	    <LinearLayout 
+	        android:layout_width="0dp"
+	        android:layout_height="match_parent"
+	        android:layout_weight="0.5">
+	        <ImageView 
+	            android:id="@+id/plan_typeImageView"
+	            android:layout_width="10dp"
+	            android:layout_height="match_parent"
+	            android:background="@android:color/darker_gray"/>
+	        <TextView 
+	            android:id="@+id/plan_typeTextView"
+	            android:layout_width="0dp"
+	            android:layout_weight="1"
+	            android:layout_height="match_parent"
+	            android:text="       未分类"/>
+	    </LinearLayout>
+	</LinearLayout>"
+</LinearLayout>

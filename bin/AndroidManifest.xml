@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="cn.edu.zju.isee.www.dayplan"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="19" />
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-feature android:name="android.hardware.camera"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="cn.edu.zju.isee.www.dayplan.PlanListActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity 
+            android:name="cn.edu.zju.isee.www.dayplan.PlanEditActivity">            
+        </activity>
+        <activity 
+            android:name="cn.edu.zju.isee.www.dayplan.PlanPagerActivity">  
+            <meta-data android:name="android.support.PARENT_ACTIVITY"
+                android:value=".PlanListActivity"/>          
+        </activity>
+        <activity 
+            android:name="cn.edu.zju.isee.www.dayplan.PlanCameraActivity"
+            android:screenOrientation="landscape">            
+        </activity>
+        
+        <activity 
+            android:name="cn.edu.zju.isee.www.dayplan.ImageActivity">            
+        </activity>
+        
+		<activity 
+		    android:name="cn.edu.zju.isee.www.dayplan.AlarmActivity">		
+		</activity>
+    </application>
+
+</manifest>
